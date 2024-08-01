@@ -18,11 +18,11 @@ const storage = new CloudinaryStorage({
     }
 })
 
-const cloudinaryFileUploader = multer({ storage: storage });
+const cloudinaryFileUploader = multer({ storage});
 
 // Middleware to handle multiple file uploads (e.g., max 10 files)
 const uploadMultiple = cloudinaryFileUploader.array('images', 10);
 module.exports = {
-    cloudinaryFileUploader,
     uploadMultiple
 }
+;

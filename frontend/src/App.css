@@ -1,0 +1,29 @@
+.dropzone {
+  width: 100%;
+  padding: 20px;
+  border: 2px dashed #007bff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.image-card{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.image-card img{
+  width: 100%;
+  height: auto;
+}
+.image-card p{
+  margin: 0;
+  padding: 10px;
+  background: #f8f9fa;
+}
